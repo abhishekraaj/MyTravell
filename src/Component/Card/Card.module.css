@@ -1,0 +1,26 @@
+.main{
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+
+}
+.img{
+    height: 20rem;
+    width: 20rem;
+    margin: 2rem;
+    border-radius: 2rem;
+}
+
+.para{
+    margin-left: 3rem;
+}
+.cera{
+    width: 25vw;
+    margin-left: 4vw;
+    margin-top: 4vh;
+}

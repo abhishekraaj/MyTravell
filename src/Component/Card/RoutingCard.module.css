@@ -1,0 +1,24 @@
+.logo{
+    font-size: 1.5rem; 
+}
+.img{
+gap: 2rem;
+padding: 5rem;
+display: grid;
+grid-template-columns: repeat(6 , 1fr); 
+grid-template-columns: 1fr 1fr 1fr ;
+
+}
+
+.main{
+    display: flex;
+    display: grid;
+    
+    
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-weight: bold;
+}
