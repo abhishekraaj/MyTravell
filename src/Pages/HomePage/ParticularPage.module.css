@@ -1,0 +1,29 @@
+.main {
+   display: flex;
+   flex-direction: row;
+}
+
+.container {
+   display: flex;
+   display: grid;
+   gap: 5rem;
+   margin-top: 3rem;
+   margin-left: 3rem;
+   grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.details {
+   font-style: oblique;
+   font-size: 1.2rem;
+   margin-left: 2rem;
+   cursor: pointer;
+
+}
+
+.main1 {
+   background-image: url("https://t3.ftcdn.net/jpg/04/12/82/16/360_F_412821610_95RpjzPXCE2LiWGVShIUCGJSktkJQh6P.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}

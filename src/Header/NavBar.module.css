@@ -1,7 +1,13 @@
-.logo{
-    font-size: 1.5rem; 
+.logo {
+    font-size: 1.5rem;
 }
-    /* animation: left-right 2s ease-in-out infinite alternate-reverse both ;
+
+.logo b {
+    position: absolute;
+    margin-top: 2rem;
+}
+
+/* animation: left-right 2s ease-in-out infinite alternate-reverse both ;
 
     
 }
@@ -14,8 +20,8 @@
     0%{transform: translate(10px);}
     100%{transform: translate(-10px);}
 } */
-.mainbox{
-    display: flex; 
+.mainbox {
+    display: flex;
     justify-content: space-between;
     position: sticky;
     padding: 1rem 3rem;
@@ -23,82 +29,95 @@
     align-items: center;
     z-index: 9999;
     background-color: white;
-    
+
 }
-.middlebox{
+
+.middlebox {
     border-radius: 2rem;
     display: flex;
     gap: 1.2rem;
     border: 1px solid;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   box-shadow: 1px 1px 1px 1px;
-   cursor: pointer;
-   margin-bottom: 5vh;
-   cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 1px 1px 1px 1px;
+    cursor: pointer;
+    margin-bottom: 5vh;
+    cursor: pointer;
 
 }
-.search{
-    
+
+.search {
+
     background-color: rgb(236, 34, 34);
     height: 1.5rem;
     width: 1.5rem;
     border-radius: 2rem;
     cursor: pointer;
-    
+
 }
-.middleweek{
-   
+
+.middleweek {
+
     padding: 0.5rem;
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-.middleweeks{
-  border-left: 1px solid;
-  border-right: 1px solid ;
-  padding: 0.5rem 1rem ;
-  cursor: pointer;
+
+.middleweeks {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
 
 }
-.rightbox{
+
+.rightbox {
     background-color: rgb(215, 215, 243);
     border-radius: 3rem;
     width: 10rem;
     cursor: pointer;
 
-    
+
 }
-.rightbar{
+
+.rightbar {
     padding-left: 0.5rem;
     cursor: pointer;
-    
+
 }
-.rightuser{
+
+.rightuser {
     padding-left: 1rem;
     padding-right: 0.5rem;
     cursor: pointer;
-    
+
 }
-.yourhome{
+
+.yourhome {
     margin-right: 4rem;
     font-weight: 600;
     border-radius: 4rem;
     cursor: pointer;
-    
+
 }
-.yourhome:hover{
+
+.yourhome:hover {
     background-color: lightgrey;
 }
-.earth{
+
+.earth {
     margin-right: 2rem;
     border-radius: 6rem;
     cursor: pointer;
+
 }
-.earth:hover{
+
+.earth:hover {
     background-color: lightgrey;
 }
-.userbox{
+
+.userbox {
     height: 30vh;
     width: 15vw;
     margin-left: 2rem;
@@ -106,19 +125,23 @@
     background-color: rgb(237, 248, 247);
     border-radius: 2rem;
     z-index: 9999;
-    top: 8rem;
+    top: 12rem;
     box-shadow: 0px 0px 10px 2px;
+
 }
-.userbox1{
+
+.userbox1 {
     font-weight: 1rem;
     margin-left: 2rem;
     cursor: pointer;
-    
+
 }
-.userbox1 p:hover{
+
+.userbox1 p:hover {
     background-color: white;
 }
-.dialog{
+
+.dialog {
     height: 90vh;
     width: 60vw;
     border-radius: 2rem;
@@ -126,4 +149,5 @@
     box-shadow: 0px 0px 10px 2px;
     background-color: white;
     right: 50vh;
-  }
+
+}

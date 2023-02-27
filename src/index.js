@@ -3,28 +3,27 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter,Routes,Route} from "react-router-dom" 
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 // import CardPage from './Pages/CardPage/CardPage';
 import { RecoilRoot } from 'recoil';
 import RoutingCard from './Component/Card/RoutingCard';
 import YourHomePage from './Pages/HomePage/YourHomePage';
+import ParticulaPage from './Pages/HomePage/ParticularPage';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   <React.StrictMode>
     <RecoilRoot>
-    <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<App/>}/>
-      {
-
-        // <Route path='/:card' element={<CardPage/>}/>
-      }
-      <Route path='/routingCard' element={<RoutingCard/>}/>
-      <Route path='/host/home' element={<YourHomePage/>}/>
-    </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<App />} />
+          <Route path='/routingCard' element={<RoutingCard />} />
+          <Route path='/host/home' element={<YourHomePage />} />
+          <Route path='/particularPage' element={<ParticulaPage />} />
+        </Routes>
+      </BrowserRouter>
     </RecoilRoot>
   </React.StrictMode>
 );

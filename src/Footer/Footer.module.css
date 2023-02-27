@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+.box {
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 1rem;
+
+}
+
+.boxownername {
+  color: red;
+  opacity: 0.6;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.boxHeading {
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 10.1rem 0rem 10.1rem;
+}
+
+.boxDesigned {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem;
+  color: rgb(109, 109, 109);
+}
+
+.social {
+  display: flex;
+}
+
+.box2 {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  color: rgb(109, 109, 109);
+  width: 70vw;
+}
+
+.boxIcon {
+  font-size: 2rem;
+  font-weight: 5rem;
+  font-family: 'Ubuntu', sans-serif;
+  padding-left: 2rem;
+  color: rgb(109, 109, 109);
+  text-align: center;
+}
+
+.socialLogo {
+  font-size: 3rem;
+  display: flex;
+  margin-top: 10vh;
+  margin-right: 5vw;
+  color: rgb(109, 109, 109);
+  gap: 2rem;
+}
+
+.boxFooter {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: rgb(79, 79, 79);
+  line-height: 1.7rem;
+  margin-top: 1rem;
+}

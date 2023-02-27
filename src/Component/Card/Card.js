@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
 import { amazingViews } from "../../Data/Sub-Category/amazingViews";
 import { beachFront } from "../../Data/Sub-Category/beachFront";
 import { cabin } from "../../Data/Sub-Category/cabin";
@@ -36,7 +35,9 @@ import { iconicCities } from "../../Data/Sub-Category/iconicCities";
 import { skiing } from "../../Data/Sub-Category/skiing";
 import { chefKitchen } from "../../Data/Sub-Category/chefKitchen";
 
-export default function Card({click ,setActive}) {
+
+export default function Card({ click, setActive }) {
+
   let subCategorey = [
     ...cabin,
     ...amazingViews,
@@ -70,67 +71,81 @@ export default function Card({click ,setActive}) {
     ...iconicCities,
     ...skiing,
     ...chefKitchen,
- 
+
   ];
- let findIndex = subCategorey.findIndex(x=> x.id === click.id)
-  const [index ,setIndex] = useState(0)
- 
-  const [list ,setList] = useState(subCategorey[index].data) 
- useEffect(()=>{
-  if(findIndex === -1){
-    setIndex(0)
-  }else{
-    setIndex(subCategorey.findIndex(x=> x.id === click.id) )
+  let findIndex = subCategorey.findIndex(x => x.id === click.id)
+  const [index, setIndex] = useState(0)
+
+
+  const [list, setList] = useState(subCategorey[index].data)
+  const nav = useNavigate()
+  useEffect(() => {
+    if (findIndex === -1) {
+      setIndex(0)
+    } else {
+      setIndex(subCategorey.findIndex(x => x.id === click.id))
+    }
+    setList(subCategorey[index].data)
+
+  }, [findIndex])
+  console.log(findIndex, "index find")
+
+  function handlePriceLow() {
+    console.log(list[0].price.split("").slice(1).join(""))
+    list.sort((a, b) => {
+      return a.price.split("").slice(1).join("") - b.price.split("").slice(1).join("")
+    })
+    setList([...list])
+
   }
-  setList(subCategorey[index].data)
+  function handlePriceHigh() {
+    console.log(list[0].price.split("").slice(1).join(""))
+    list.sort((a, b) => {
+      return b.price.split("").slice(1).join("") - a.price.split("").slice(1).join("")
+    })
+    setList([...list])
+  }
 
- },[findIndex])
-console.log(findIndex,"index find")
+  function handleRedirect(e) {
+    // setMyData(e)
+    // console.log(MyData)
 
-function handlePriceLow() {
-  console.log(list[0].price.split("").slice(1).join(""))
- list.sort((a,b)=>{
-  return a.price.split("").slice(1).join("") - b.price.split("").slice(1).join("")
- })
- setList([...list])
+    localStorage.setItem("particalData", JSON.stringify(e))
+    nav("/particularPage")
+  }
 
-}
-function handlePriceHigh() {
-  console.log(list[0].price.split("").slice(1).join(""))
- list.sort((a,b)=>{
-  return b.price.split("").slice(1).join("") - a.price.split("").slice(1).join("")
- })
- setList([...list])
-}
+
+
+
   return (
     <>
+
       <div className={Style.main}>
-      <div>
-      <button onClick={handlePriceLow}>Filter By Price Low to High</button>
-      <button onClick={handlePriceHigh}>Filter By  Price High to Low</button>
-      <h3>Beds Available</h3>
-      <select>
-      <option>2 beds</option>
-      <option>More Than Two Beds</option>
-      </select>
-      </div>
-        {list.map((x,i) => (
-          <div key={i} className={Style.cera}>
+        <div className={Style.btn}>
+          <button onClick={handlePriceLow}>Filter By Price Low to High</button>
+          <button onClick={handlePriceHigh}>Filter By  Price High to Low</button>
+
+        </div>
+
+        {list.map((x, i) => (
+          <div key={i} className={Style.cera} >
             <Carousel style={{ width: "50px" }} cols={2} rows={1} gap={0} loop>
-              
-              {x?.images.map((x,i) => (
-                
+
+              {x?.images.map((x, i) => (
+
                 <Carousel.Item key={i}>
                   <img width="350px" height="280px" src={x} alt="pp" />
                 </Carousel.Item>
-              
-                
+
+
               ))}
+
             </Carousel>
-            
-            <b>{x?.title}</b>
-            <p>{x?.localizedDistanceText}</p>
-            <p>Rupees : {x?.accessibilityLabel}</p>
+            <div >
+              <b onClick={() => handleRedirect(x)}>{x?.title}</b>
+              <p>{x?.localizedDistanceText}</p>
+              <p>Rupees : {x?.accessibilityLabel}</p>
+            </div>
           </div>
         ))}
       </div>

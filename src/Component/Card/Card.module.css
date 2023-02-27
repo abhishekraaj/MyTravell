@@ -1,26 +1,39 @@
-.main{
+
+.main {
     display: flex;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
 
 }
-.img{
+
+.img {
     height: 20rem;
     width: 20rem;
     margin: 2rem;
     border-radius: 2rem;
 }
 
-.para{
+.para {
     margin-left: 3rem;
 }
-.cera{
+
+.cera {
     width: 25vw;
     margin-left: 4vw;
-    margin-top: 4vh;
+    margin-top: 10vh;
+
+}
+
+.btn {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 36rem;
 }
