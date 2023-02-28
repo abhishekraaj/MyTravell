@@ -75,7 +75,7 @@ export default function Card({ click, setActive }) {
   ];
   let findIndex = subCategorey.findIndex(x => x.id === click.id)
   const [index, setIndex] = useState(0)
-
+ 
 
   const [list, setList] = useState(subCategorey[index].data)
   const nav = useNavigate()

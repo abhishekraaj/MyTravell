@@ -7,19 +7,7 @@
     margin-top: 2rem;
 }
 
-/* animation: left-right 2s ease-in-out infinite alternate-reverse both ;
 
-    
-}
-@-webkit-keyframes left-right{
-    0%{transform: translate(10px);}
-    100%{transform: translate(-10px);}
-}
-
-@keyframes left-right{
-    0%{transform: translate(10px);}
-    100%{transform: translate(-10px);}
-} */
 .mainbox {
     display: flex;
     justify-content: space-between;

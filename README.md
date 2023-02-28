@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# About 
+The project name is mytravell.
+This project is based on hotel booking (like AIRbnb)
+where we can access all the content of particular hotels and rooms.
+we can also search the hotel by the price like low to high price and High to Low price.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## website link 
+https://vocal-genie-6006cb.netlify.app
 
-## Available Scripts
+## Project Overview 
+1. I have used Recoil Package.
+2. I have used react-router-dom for navigate.
 
-In the project directory, you can run:
 
-### `npm start`
+## Project Overview 
+Functionality in this project are .
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+when we click on carousel then we get a particular page or card
+Of that carousel (By the using of props).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+we also filter the hotel by the price (low to high , and high to low)
+Through the sorting method(sort) and (.slice) method.
 
-### `npm test`
+we also redirect the particular hotel description page by the clicking on the text of hotel name .
+Here i am using localStorage for set the item and get it on the particular page.(by the using of localStorage) \
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## functinalities
+I have used localstorage to setitem and get the item.
+My lading page is home page in this page there is navbar , caraousel and card page.
+Here is also seprate option to search a Hotel .
+Serate option for price Range .
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

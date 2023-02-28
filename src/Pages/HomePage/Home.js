@@ -6,7 +6,7 @@ import Footer from "../../Footer/Footer";
 
 function Home() {
   const [click, setClick] = useState(0)
-  const [active, setActive] = useState(0)
+  
 
   console.log(click, "homepage")
   return (
